@@ -7,7 +7,7 @@ import Config
 # before starting your production server.
 config :chatapp, ChatappWeb.Endpoint,
   url: [host: "https://laith-chatapp.gigalixirapp.com", scheme: "https", port: 443],
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  # force_ssl: [rewrite_on: [:x_forwarded_proto]],
   check_origin: ["https://laith-chatapp.gigalixirapp.com"],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
