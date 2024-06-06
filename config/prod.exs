@@ -6,9 +6,9 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :chatapp, ChatappWeb.Endpoint,
-  url: [host: "http://laith-chatapp.gigalixirapp.com", scheme: "http", port: 443],
+  url: [host: "laith-chatapp.gigalixirapp.com", port: 80],
   # force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  check_origin: ["http://laith-chatapp.gigalixirapp.com"],
+  # check_origin: ["http://laith-chatapp.gigalixirapp.com"],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 config :chatapp, ChatappWeb.Repo,
@@ -20,7 +20,7 @@ config :chatapp, ChatappWeb.Repo,
 # Configures Swoosh API Client
 config :swoosh, api_client: Swoosh.ApiClient.Finch, finch_name: Chatapp.Finch
 
-# Disable Swoosh Local Memory Storage
+# Disable Swoosh Local Memory Storagehh
 config :swoosh, local: false
 
 # Do not print debug messages in production

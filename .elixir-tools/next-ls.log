@@ -96,3 +96,5 @@ State: %{lsp: #PID<0.276.0>, awaiting_response: %{}, comm_data: nil, comm: GenLS
 21:06:17.145 [info] Loading 57 CA(s) from :otp store
 
 16:45:07.964 [info] Loading 57 CA(s) from :otp store
+
+01:48:57.290 [info] Loading 57 CA(s) from :otp store
