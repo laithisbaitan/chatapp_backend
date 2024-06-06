@@ -13,7 +13,7 @@ config :chatapp, ChatappWeb.Endpoint,
 
 config :chatapp, ChatappWeb.Repo,
   adapter: Ecto.Adapters.Postgres,
-  url: System.get_env("DATABASE_URL"),
+  url: {:system, "DATABASE_URL"},
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 
 # Configures Swoosh API Client
